@@ -1,0 +1,2 @@
+# lambda_dynamodb_test
+LambdaとDynamoDBを用いた簡単なAPIを作成してみるテスト
