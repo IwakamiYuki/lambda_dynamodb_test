@@ -11,8 +11,9 @@ LambdaとDynamoDBを用いた簡単なAPIを初めて作成してみるテスト
 API Gateway + Lambda + DynamoDB
 
 ### batch
-ランキング更新をする
+定期的にランキング更新をする
 CloudWatch Events + Lmabda (+DynamoDB)
+
 
 ## API Gateway
 
@@ -24,3 +25,15 @@ CloudWatch Events + Lmabda (+DynamoDB)
 |/score|スコア登録|
 |/ranking|ランキング取得|
 |/batch|バッチを手動で実行するためのデバッグ用API|
+
+
+### DynamoDB
+
+#### Userテーブル
+id, highscore, name, rank
+
+#### Tokenテーブル
+token, user_id
+
+#### Rankiingテーブル
+rank, highscore, id, name
